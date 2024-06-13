@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>muyotalk</title>
+    <link rel="stylesheet" href="{{ url_for('talk.static', filename='index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="index_h1">muyotalk</h1>
+        <form action="{{url_for('talk.friends')}}">
+            <input type="text" placeholder="계정 (이메일 또는 전화번호)" class="input-field">
+            <input type="password" placeholder="비밀번호" class="input-field">
+            <input type="submit" value="로그인" class="submit-btn">
+        </form>
+    </div>
+</body>
+</html>

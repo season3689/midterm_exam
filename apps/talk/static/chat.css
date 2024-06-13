@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Ownglyph_ryuttung-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_ryuttung-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ownglyph_ryuttung-Rg', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: skyblue;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.chat-main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+.message .meta {
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.message .text {
+    font-size: 1em;
+    color: #333;
+}
+
+.chat-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+}
+
+#chat-form {
+    display: flex;
+    width: 100%;
+}
+
+#msg {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+#msg:focus {
+    border-color: #007BFF;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.outBtn {
+    padding: 10px 20px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.outBtn:hover {
+    background-color: #0056b3;
+}
+
+.out {
+    text-decoration: none;
+}

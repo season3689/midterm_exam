@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅방</title>
+    <link rel="stylesheet" href="{{ url_for('talk.static', filename='friends.css') }}">
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="{{url_for('talk.friends')}}">
+                    <img src="{{url_for('talk.static', filename='dog-friend.jpg')}}">
+                </a>
+            </li>
+            <li>
+                <a href="{{url_for('talk.chats')}}">
+                    <img src="{{url_for('talk.static', filename='comics.png')}}">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="header">
+            <h3>채팅</h3>
+            <div class="header-buttons">
+                <span class="header-button"></span>
+                <span class="header-button"></span>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="chat-room-list">
+                <a href="{{url_for('talk.chat')}}" class="friend-item">채팅방1</a>
+                <br>
+                <a href="{{url_for('talk.chat')}}" class="friend-item">채팅방2</a>
+            </div>
+        </main>
+</body>
+</html>

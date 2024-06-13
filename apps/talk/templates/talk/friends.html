@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>친구목록</title>
+    <link rel="stylesheet" href="{{ url_for('talk.static', filename='friends.css') }}">
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="{{url_for('talk.friends')}}">
+                    <img src="{{url_for('talk.static', filename='dog-friend.jpg')}}">
+                </a>
+            </li>
+            <li>
+                <a href="{{url_for('talk.chats')}}">
+                    <img src="{{url_for('talk.static', filename='comics.png')}}">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="header">
+            <h3>친구</h3>
+            <div class="header-buttons">
+                <span class="header-button"></span>
+                <span class="header-button"></span>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="profile-section">
+                <div class="profile" style="font-size: 1.2em;">
+                    <img src="{{url_for('talk.static', filename='bald-eagle.jpg')}}" alt="프로필">
+                    <p>코딩개초보</p>
+                </div>
+                <hr>
+                <div class="friends-count">친구 3</div>
+                <br>
+            </div>
+            <div class="friends-list"></div>
+                <div class="friend-item">
+                    <img src="{{url_for('talk.static', filename='worm.png')}}" alt="지렁이"></div> 
+                <div class="friend-item">
+                    <img src="{{url_for('talk.static', filename='sea-anemones.jpg')}}" alt="말미잘">
+                </div>
+                <div class="friend-item">
+                    <img src="{{url_for('talk.static', filename='bird.jpg')}}" alt="참새">
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

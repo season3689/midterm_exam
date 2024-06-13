@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅목록부분</title>
+    <link rel="stylesheet" href="{{ url_for('talk.static', filename='chat.css') }}">
+
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>채팅방</h1>
+        </header>
+        <main class="chat-main">
+            <div class="chat-messages">
+                <div class="message">
+                    <p class="meta">나 <span>10:30 AM</span></p>
+                    <p class="text">안녕하세요!</p>
+                </div>
+                <div class="message">
+                    <p class="meta">누군가 <span>10:32 AM</span></p>
+                    <p class="text">안녕하세요! 어떻게 지내세요?</p>
+                </div>
+                <div class="message">
+                    <p class="meta">나 <span>10:34 AM</span></p>
+                    <p class="text">잘 지내고 있어요! 다음에 밥 한번 먹어요!</p>
+                </div>
+                <div class="message">
+                    <p class="meta">누군가 <span>10:36 AM</span></p>
+                    <p class="text">시른데요</p>
+                </div>
+                <div class="message">
+                    <p class="meta">누군가 <span>10:36 AM</span></p>
+                    <p class="text">시른데요</p>
+                </div>
+                <div class="message">
+                    <p class="meta">누군가 <span>10:36 AM</span></p>
+                    <p class="text">시른데요</p>
+                </div>
+                <div class="message">
+                    <p class="meta">누군가 <span>10:36 AM</span></p>
+                    <p class="text">시른데요</p>
+                </div>
+            </div>
+        </main>
+        <footer class="chat-footer">
+            <form id="chat-form">
+                <input type="text" id="msg" placeholder="메시지를 입력하세요...">
+                <button type="submit" class="btn">전송</button>
+            </form>
+        </footer>
+    </div>
+    <div class="outBtn">
+        <a href="{{url_for('talk.chats')}}" class="out">나가기</a>
+    </div>
+</body>
+</html>
